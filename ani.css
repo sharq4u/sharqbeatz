@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.header {
+    background-color: #111e30;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    transition: 0.3s;
+    break-inside: avoid-column;
+    display: flex;
+}
+
+.nav-links a:hover {
+    background-color: #24354e;
+}
+
+/* Home Section Styles */
+.home {
+    background-color: #24354e;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Products Section Styles */
+.products {
+    background-color: #121922;
+    background-image: url(stash/vr\ 3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.product-sample {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+}
+.login-signup {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.login-button, .signup-button {
+    text-decoration: none;
+    color: #fff;
+    background: #24354e;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.login-button:hover, .signup-button:hover {
+    background: #124199;
+}
+.product-item {
+    width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    border-bottom: 2px solid #555;
+}
+
+.product-item p {
+    padding: 20px;
+    text-align: left;
+}
+
+/* About and Contact Sections Styles */
+.about,
+.contact {
+    background-color: #172336;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #121922;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Oval Shape Cut for Background */
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    z-index: -1;
+    clip-path: ellipse(70% 100% at 50% 50%);
+}
+
+/* Animation Styles */
+.product-item {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    opacity: 0.9;
+}

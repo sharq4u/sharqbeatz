@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharq's Beatz - Forgotten Password</title>
+    <style>
+        body {
+            background-color: #1d509e;
+            font-family: Arial, sans-serif;
+            background-image: url(stash/fp.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo-text {
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        .form-container {
+            background-image: url(stash/fp.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            color: #080016;
+        }
+
+        .form-container label {
+            font-weight: bold;
+            display: block;
+            margin: 20px 0 10px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .form-container input[type="password"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .otp-method {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .otp-method label {
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .form-container button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #1d509e;
+        }
+        #name
+        {
+            color: #463f3f;
+            font-size: bold;
+        }
+        .back-link {
+            margin-top: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fffbfb;
+        }
+        a:link {color: rgb(255, 255, 255); background-color: transparent; text-decoration: none;}
+        a:visited {color: rgb(16, 1, 104); background-color: transparent; text-decoration: no}
+        a:hover {color: #1d509e; background-color: transparent; text-decoration: underline;}
+        a:active {color: rgb(66, 5, 46); background-color:transparent; text-decoration: underline;}
+    </style>
+</head>
+
+<body>
+    <div class="logo-container">
+        <div class="logo-text">Wemray</div>
+    </div>
+    <div class="form-container">
+        <h2>Forgotten Password</h2>
+        <form action="Login.html">
+            <label id="name" for="password">Enter Your Previous Password</label>
+            <input type="password" id="password" name="password" required>
+            <div class="otp-method">
+                <label id="name"><input type="radio" name="OTP" value="sms"> SMS</label>
+                <label id="name"><input type="radio" name="OTP" value="voicecall"> Voicecall</label>
+            </div>
+            <button type="submit">Submit and Get OTP</button>
+        </form>
+        <a href="Login.html" class="back-link">Back to Login Page</a>
+    </div>
+</body>
+
+</html>

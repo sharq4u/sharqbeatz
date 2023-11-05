@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            background-image: url("stash/login.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Changed height to min-height */
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-image: url("stash/login.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .logo {
+            width: 75px;
+            height: 74px;
+            background: url('stash/signin.jpg') no-repeat center center;
+            background-size: contain;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: azure;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1d509e;
+            transition: 0.3s;
+        }
+
+        /* Added missing colon after text-decoration */
+        a:link {
+            color: rgb(255, 254, 254);
+            background-color: transparent;
+            text-decoration: underline;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+        a:visited {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #1d509e;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <div class="logo"></div>
+            Sign-up
+        </h1>
+        <form action="Login.html" method="GET"> <!-- Added method attribute and changed action file extension to .html -->
+            <input type="text" placeholder="First Name" required><br>
+            <input type="text" placeholder="Surname" required><br>
+            <input type="text" placeholder="Last Name" required><br>
+            <input type="text" placeholder="Username" required><br>
+            <label style=" color: aliceblue;">Date Of Birth</label><br>
+            <input type="date" required><br>
+            <select required>
+                <option disabled selected>Nationality</option>
+                <option>Nigeria</option>
+                <option>Ghana</option>
+                <option>Kenya</option>
+            </select><br>
+            <select required>
+                <option disabled selected>States</option>
+                <option>Rivers</option>
+                <option>Kaduna</option>
+                <option>Kano</option>
+            </select><br>
+            <input type="tel" placeholder="Phone Number" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="submit" value="Sign Up">
+        </form>
+        <a href="Login.html">I have an Account</a>
+    </div>
+</body>
+
+</html>

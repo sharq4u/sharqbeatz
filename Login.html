@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(stash/Login.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .login-container {
+            width: 320px;
+            background-image: url(stash/Login.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo h2 {
+            font-size: 40px;
+            color: #fcfdfd;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .form label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .form input {
+            width: 86%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .login-button {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 12px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            width: 86%;
+        }
+
+        .login-button:hover {
+            background-color: #1a2b46;
+            transition: 0.3s;
+        }
+
+        .link-spot {
+            margin-top: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #f5f2f2;
+            display: block;
+            text-align: center;
+        }
+        .link-spot:hover
+        {
+            color: #1d509e;
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo">   
+            <h2>Login</h2>
+        </div>
+        <form class="form" action="Create or Login.html">
+            <label for="username">Username or Email</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username or email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            <a href="index.html" class="login-button">Login</a>
+        </form>
+        <a href="FP.html" class="link-spot">Forgot your password?</a>
+        <a href="Create or Login.html" class="link-spot">Don't have an Account?</a>
+    </div>
+</body>
+
+</html>
