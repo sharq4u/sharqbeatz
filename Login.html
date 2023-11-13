@@ -40,6 +40,7 @@
             align-items: center;
             justify-content: center;
         }
+
         .logo h2 {
             font-size: 40px;
             color: #fcfdfd;
@@ -68,7 +69,7 @@
         }
 
         .login-button {
-            background-color: #000000;
+            background-color: #121216;
             color: #fff;
             border: none;
             border-radius: 3px;
@@ -93,18 +94,28 @@
             display: block;
             text-align: center;
         }
-        .link-spot:hover
-        {
+
+        .link-spot:hover {
             color: #1d509e;
             text-decoration: underline;
             transition: 0.3s;
+        }
+
+        #loader {
+            background: #1d1f39 url(stash/spiral-css-preloader.gif) no-repeat center center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-size: 15%;
         }
     </style>
 </head>
 
 <body>
+    <div id="loader"></div>
     <div class="login-container">
-        <div class="logo">   
+        <div class="logo">
             <h2>Login</h2>
         </div>
         <form class="form" action="Create or Login.html">
@@ -117,6 +128,13 @@
         <a href="FP.html" class="link-spot">Forgot your password?</a>
         <a href="Create or Login.html" class="link-spot">Don't have an Account?</a>
     </div>
+    <script>
+        var loader = document.getElementById("loader")
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+
+    </script>
 </body>
 
 </html>
