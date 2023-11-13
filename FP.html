@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharq's Beatz - Forgotten Password</title>
     <style>
+        #loader {
+            background: #1d1f39 url(stash/spiral-css-preloader.gif) no-repeat center center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-size: 15%;
+        }
+
         body {
             background-color: #1d509e;
             font-family: Arial, sans-serif;
@@ -29,6 +38,7 @@
             align-items: center;
             margin-bottom: 20px;
         }
+
         .logo-text {
             font-size: 36px;
             color: #ffffff;
@@ -91,25 +101,47 @@
         .form-container button:hover {
             background-color: #1d509e;
         }
-        #name
-        {
+
+        #name {
             color: #463f3f;
             font-size: bold;
         }
+
         .back-link {
             margin-top: 20px;
             font-size: 16px;
             text-decoration: none;
             color: #fffbfb;
         }
-        a:link {color: rgb(255, 255, 255); background-color: transparent; text-decoration: none;}
-        a:visited {color: rgb(16, 1, 104); background-color: transparent; text-decoration: no}
-        a:hover {color: #1d509e; background-color: transparent; text-decoration: underline;}
-        a:active {color: rgb(66, 5, 46); background-color:transparent; text-decoration: underline;}
+
+        a:link {
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(16, 1, 104);
+            background-color: transparent;
+            text-decoration: no
+        }
+
+        a:hover {
+            color: #1d509e;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(66, 5, 46);
+            background-color: transparent;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
+    <div id="loader"></div>
     <div class="logo-container">
         <div class="logo-text">Wemray</div>
     </div>
@@ -126,6 +158,13 @@
         </form>
         <a href="Login.html" class="back-link">Back to Login Page</a>
     </div>
+    <script>
+        var loader = document.getElementById("loader")
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+
+    </script>
 </body>
 
 </html>
